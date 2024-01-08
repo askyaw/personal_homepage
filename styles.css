@@ -1,0 +1,317 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: black;
+  background-color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Section Styles */
+section {
+  margin: 20px 0;
+}
+
+/* About Section - Image Styles */
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Skills Section - Progress Bar Styles */
+.progress-bar {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Additional responsive adjustments as needed */
+}
+
+/* Remaining styles... */
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* About Section - Image Styles */
+#about img {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Skills Section - Progress Bar Styles */
+.progress-bar {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer div {
+  margin: 10px 0;
+}
+
+/* Social Media Icons */
+.fab {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .progress-bar,
+  .progress {
+    border-radius: 0;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  text-align: center; /* Center align content */
+}
+
+.slide p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slide img {
+  width: auto;
+  height: auto;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 80vh; /* Adjust height as needed */
+  margin: auto; /* Center the image horizontally */
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Position left at 50% of the parent element */
+  transform: translateX(-50%); /* Shift overlay to the left by half its width */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 80%; /* Adjust width as needed */
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.dot-navigation {
+  text-align: center;
+  padding: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 0;
+  border-radius: 5px;
+}
+
+.progress-teaching {
+  background-color: #ff5733; /* Example color */
+  animation: fillProgressTeaching 4s infinite ease-in-out;
+}
+
+.progress-massage {
+  background-color: #33ccff; /* Another example color */
+  animation: fillProgressMassage 4s infinite ease-in-out;
+}
+
+.progress-html {
+  background-color: #15b73e; /* HTML color */
+  animation: fillProgressHtml 7s infinite ease-in-out;
+}
+
+.progress-css {
+  background-color: #dfc33c; /* CSS color */
+  animation: fillProgressCss 3s infinite ease-in-out;
+}
+
+.progress-javascript {
+  background-color: #e0164c; /* JavaScript color */
+  animation: fillProgressJavascript 5s infinite ease-in-out;
+}
+
+/* Keyframes for the fillProgressHtml animation */
+@keyframes fillProgressTeaching {
+  0%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+/* Keyframes for the fillProgressHtml animation */
+@keyframes fillProgressMassage {
+  0%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+/* Keyframes for the fillProgressHtml animation */
+@keyframes fillProgressHtml {
+  0%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+/* Keyframes for the fillProgressCss animation */
+@keyframes fillProgressCss {
+  0%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+/* Keyframes for the fillProgressJavascript animation */
+@keyframes fillProgressJavascript {
+  0%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .progress-bar,
+  .progress {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaw Tutu's Personal Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Yaw Tutu</h1>
+        <!-- Navigation bar -->
+        <nav>
+          <ul>
+            <li><a href="#modalies">Modalities</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="modality">
+      <div class="container">
+        <h2>My Modalities</h2>
+        <!-- Projects content -->
+        <div id="slider" class="slider">
+          <!-- Slide 1: Tantra -->
+          <div class="slide">
+            <img src="/images/boss.jpg" alt="Tantra" />
+            <div class="overlay">
+              <h3>Tantra</h3>
+              <!-- <p>Description of Tantra modality...</p> -->
+            </div>
+          </div>
+
+          <!-- Slide 2: AudioVisual Therapy -->
+          <div class="slide">
+            <img src="/images/thai2.jpg" alt="AudioVisual Therapy" />
+            <div class="overlay">
+              <h3>Thai Massage</h3>
+              <!-- <p>Description of AudioVisual Therapy modality...</p> -->
+            </div>
+          </div>
+
+          <!-- Slide 3: Massage -->
+          <div class="slide">
+            <img src="/images/thai.jpg" alt="Massage" />
+            <div class="overlay">
+              <h3>Massage</h3>
+              <!-- <p>Description of Massage modality...</p> -->
+            </div>
+          </div>
+
+          <!-- Slide 4: Qigong -->
+          <div class="slide">
+            <img src="/images/qigong.jpg" alt="Qigong" />
+            <div class="overlay">
+              <h3>Qigong</h3>
+              <!-- <p>Description of Qigong modality...</p> -->
+            </div>
+          </div>
+
+          <!-- Slide 5: MPS -->
+          <div class="slide">
+            <img src="/images/reiki.jpg" alt="MPS" />
+            <div class="overlay">
+              <h3>Reiki</h3>
+              <!-- <p>Description of MPS modality...</p> -->
+            </div>
+          </div>
+
+          <!-- Dot Navigation -->
+          <div class="dot-navigation">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <img src="/images/boss.jpg" alt="Yaw Tutu" />
+        <p>
+          Hello! I'm Yaw T. I'm a professional massage therapist and computer
+          programmer. I love helping people feel better. Feel free to learn more
+          about my professional journey.
+        </p>
+        <a href="path_to_your_resume.pdf" target="_blank">Download My Resume</a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <!-- Skills content -->
+        <div class="skill">
+          <h3>Teaching</h3>
+          <p>
+            With a passion for education, I excel in delivering complex concepts
+            in an understandable manner. My experience ranges from classroom
+            teaching to one-on-one tutoring. I focus on interactive and engaging
+            methods to enhance learning outcomes.
+          </p>
+          <div class="progress-bar">
+            <div class="progress progress-teaching">95%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>Massage</h3>
+          <p>
+            As a certified massage therapist, I combine traditional techniques
+            with modern approaches to provide relaxation and relief. My
+            expertise includes Swedish, deep tissue, and sports massage. I
+            tailor each session to the client's specific needs.
+          </p>
+          <div class="progress-bar">
+            <div class="progress progress-massage">85%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>HTML</h3>
+          <p>
+            I have a strong grasp of HTML, the foundation of web development. My
+            skills include structuring websites, implementing SEO best
+            practices, and ensuring accessibility. I constantly update my
+            knowledge to keep up with the latest standards.
+          </p>
+          <div class="progress-bar">
+            <div class="progress progress-html">90%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>CSS</h3>
+          <p>
+            My expertise in CSS allows for creating visually appealing and
+            responsive web designs. I am proficient in layout techniques,
+            animations, and adapting designs for various devices. I strive for
+            clean, efficient, and maintainable code.
+          </p>
+          <div class="progress-bar">
+            <div class="progress progress-css">88%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>
+            I specialize in JavaScript for dynamic and interactive web
+            experiences. My skills include front-end frameworks, AJAX, and
+            creating user-centric interfaces. I focus on writing clean,
+            efficient, and scalable code.
+          </p>
+          <div class="progress-bar">
+            <div class="progress progress-javascript">75%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+      <div class="container">
+        <!-- Footer content -->
+        <p>&copy; 2024 Yaw Tutu. All rights reserved.</p>
+        <div>
+          <a
+            href="your-linkedin-profile-url"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="your-twitter-profile-url"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="your-instagram-profile-url"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
